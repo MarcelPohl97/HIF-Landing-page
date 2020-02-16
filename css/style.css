@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+body {
+    padding:2.2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+}
+
+/*Utility classes*/
+
+.btn {
+    padding: 1.2rem 4rem;
+    border-radius: 10rem;
+    text-decoration: none;
+    position:relative;
+}
+
+.white {
+    background: #FFFFFF;
+}
+
+/* Header styles */
+
+header {
+    height: 95vh;
+    background-image:linear-gradient(to top, rgba(255, 0, 204, 0.253), rgba(51, 51, 153, 0.849)), url("../img/landing-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative; 
+}
+
+header .header-nav-container h2 {
+    width:85px;
+    height:85px;
+    top: 70px;
+    left: 70px;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 2px;
+    font-weight: 100;
+    
+}
+
+header .header-nav-container .nav-container {
+    width:85px;
+    height:85px;
+    position:fixed;
+    right: 70px;
+    top: 70px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-nav-container .nav-container .nav {
+    width:35px;
+    height: 2px;
+    background: black;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+header .header-nav-container .nav-container:hover .nav:nth-child(2) {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+header .header-text-container {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header .header-text-container .header-text {
+    color:#FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 6rem;
+    line-height: 4rem;
+}
+
+header .header-text-container .header-text .main {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    font-family: "Lato", sans-serif;
+}
+
+header .header-text-container .header-text .sub {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-family: "Lato", sans-serif;
+}
+
+header .header-text-container a {
+    margin-top: 6rem;
+    color: #878787;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    background: #FFFFFF;
+    letter-spacing: 5px;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+}
+
+/*main includes all section between header and footer*/
+
+
+/*Section about styling*/
+
+
+.section-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20vh;
+    padding:20rem 15rem;
+    background:#F7F7F7;
+}
+
+.section-about .section-about-title h2 {
+    font-size: 2.8rem;
+    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+    font-family: "Lato", sans-serif;
+}
+
+.section-about .section-about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-about .section-about-content .section-about-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-about .section-about-content .section-about-info .section-about-text {
+    text-align: left;
+    max-width: 90ch;
+    margin-bottom: 2rem;
+}
+
+.section-about .section-about-content .section-about-info .section-about-text h3 {
+    font-size: 1.2rem;
+    color: #808080;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+.section-about .section-about-content .section-about-info .section-about-text p {
+    font-size: 1.2rem;
+    color: #777777;
+    margin-top: 1.5rem;
+    font-family: "Lato", sans-serif;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.section-about .section-about-content .section-about-img img {
+    width: 600px;
+    height: 400px;
+    transition: 0.2s all;
+    position: absolute;
+}
+
+.section-about .section-about-content .section-about-img img:hover {
+    transform: scale(1.05);
+}
+
