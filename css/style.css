@@ -156,13 +156,13 @@ header .header-text-container a {
 
 .section-about .section-about-content .section-about-info .section-about-text {
     text-align: left;
-    max-width: 90ch;
+    max-width: 100ch;
     margin-bottom: 2rem;
 }
 
 .section-about .section-about-content .section-about-info .section-about-text h3 {
     font-size: 1.2rem;
-    color: #808080;
+    color: #777777;
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -177,14 +177,35 @@ header .header-text-container a {
     font-weight: 400;
 }
 
+.section-about .section-about-content .section-about-info a {
+    color: #6D24A7;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+    transition: 0.2s all;
+    padding: 0.3rem 0;
+}
+
+.section-about .section-about-content .section-about-info a:hover {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    background:#6D24A7;
+    transform: translateY(-3px);
+}
+
+
 .section-about .section-about-content .section-about-img img {
     width: 600px;
     height: 400px;
     transition: 0.2s all;
-    position: absolute;
+    
 }
 
 .section-about .section-about-content .section-about-img img:hover {
     transform: scale(1.05);
 }
+
+
 
