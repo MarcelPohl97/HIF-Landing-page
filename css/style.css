@@ -38,7 +38,7 @@ header {
     position: relative; 
 }
 
-header .header-nav-container h2 {
+.header-nav-container h2 {
     width:85px;
     height:85px;
     top: 70px;
@@ -52,7 +52,7 @@ header .header-nav-container h2 {
     
 }
 
-header .header-nav-container .nav-container {
+.nav-container {
     width:85px;
     height:85px;
     position:fixed;
@@ -66,7 +66,7 @@ header .header-nav-container .nav-container {
     justify-content: center;
 }
 
-header .header-nav-container .nav-container .nav {
+.nav {
     width:35px;
     height: 2px;
     background: black;
@@ -74,12 +74,12 @@ header .header-nav-container .nav-container .nav {
     margin-bottom: 4px;
 }
 
-header .header-nav-container .nav-container:hover .nav:nth-child(2) {
+.nav-container:hover .nav:nth-child(2) {
     margin-top: 6px;
     margin-bottom: 6px;
 }
 
-header .header-text-container {
+.header-text-container {
     position: absolute;
     left: 50%;
     top: 40%;
@@ -87,7 +87,7 @@ header .header-text-container {
     text-align: center;
 }
 
-header .header-text-container .header-text {
+.header-text {
     color:#FFFFFF;
     text-transform: uppercase;
     text-align: center;
@@ -95,19 +95,19 @@ header .header-text-container .header-text {
     line-height: 4rem;
 }
 
-header .header-text-container .header-text .main {
+.main {
     font-size: 4rem;
     letter-spacing: 0.5rem;
     font-family: "Lato", sans-serif;
 }
 
-header .header-text-container .header-text .sub {
+.sub {
     font-size: 2rem;
     letter-spacing: 0.5rem;
     font-family: "Lato", sans-serif;
 }
 
-header .header-text-container a {
+.header-text-container a {
     margin-top: 6rem;
     color: #878787;
     font-size: 1.5rem;
@@ -132,7 +132,7 @@ header .header-text-container a {
     background:#F7F7F7;
 }
 
-.section-about .section-about-title h2 {
+.section-about-title h2 {
     font-size: 2.8rem;
     background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
     -webkit-background-clip: text;
@@ -144,23 +144,23 @@ header .header-text-container a {
     font-family: "Lato", sans-serif;
 }
 
-.section-about .section-about-content {
+.section-about-content {
     display: flex;
     justify-content: space-between;
 }
 
-.section-about .section-about-content .section-about-info{
+.section-about-info{
     display: flex;
     flex-direction: column;
 }
 
-.section-about .section-about-content .section-about-info .section-about-text {
+.section-about-text {
     text-align: left;
     max-width: 100ch;
     margin-bottom: 2rem;
 }
 
-.section-about .section-about-content .section-about-info .section-about-text h3 {
+.section-about-text h3 {
     font-size: 1.2rem;
     color: #777777;
     text-transform: uppercase;
@@ -168,7 +168,7 @@ header .header-text-container a {
     font-weight: 700;
 }
 
-.section-about .section-about-content .section-about-info .section-about-text p {
+.section-about-text p {
     font-size: 1.2rem;
     color: #777777;
     margin-top: 1.5rem;
@@ -177,16 +177,17 @@ header .header-text-container a {
     font-weight: 400;
 }
 
-.section-about .section-about-content .section-about-info a {
+.section-about-info a {
     color: #6D24A7;
     font-size: 1.3rem;
     margin-top: 2rem;
     text-decoration: underline;
     transition: 0.2s all;
     padding: 0.3rem 0;
+    width: 130px;
 }
 
-.section-about .section-about-content .section-about-info a:hover {
+.section-about-info a:hover {
     color: #FFFFFF;
     font-size: 1.3rem;
     margin-top: 2rem;
@@ -195,15 +196,34 @@ header .header-text-container a {
     transform: translateY(-3px);
 }
 
+.section-about-img {
+    position: relative;
+    margin-right:18rem;
+}
 
-.section-about .section-about-content .section-about-img img {
-    width: 600px;
-    height: 400px;
+.section-about-img img {
     transition: 0.2s all;
+    position:absolute;
+    width: 356x;
+    height: 237px;
+}
+
+.img-child-1 {
+    top: 0px;
+    left: -350px;
     
 }
 
-.section-about .section-about-content .section-about-img img:hover {
+.img-child-2 {
+    top: 50px;
+    left: -60px;
+}
+
+.img-child-3 {
+    top: 150px;
+    left: -220px;
+}
+.section-about-img img:hover {
     transform: scale(1.05);
 }
 
