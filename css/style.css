@@ -128,7 +128,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: -20vh;
-    padding:20rem 15rem;
+    padding:21rem 15rem;
     background:#F7F7F7;
 }
 
@@ -229,10 +229,26 @@ header {
     top: 150px;
     left: -220px;
 }
+
 .section-about-img img:hover {
     transform: scale(1.05);
     z-index: 3000;
 }
 
+.section-features {
+    display: flex;
+    flex-direction: column;
+    margin-top: -7rem;
+    padding:20rem 15rem;
+    background-image:linear-gradient(to top, rgba(255, 0, 204, 0.253), rgba(51, 51, 153, 0.849)), url("../img/section-feature.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    transform: skewY(-7deg);
 
+}
+
+.section-features h1 {
+    font-size: 16rem;
+}
 
