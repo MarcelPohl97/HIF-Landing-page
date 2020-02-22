@@ -26,6 +26,7 @@ body {
     background: #FFFFFF;
 }
 
+
 /* Header styles */
 
 header {
@@ -164,7 +165,6 @@ header {
     font-size: 1.2rem;
     color: #777777;
     text-transform: uppercase;
-    font-family: "Lato", sans-serif;
     font-weight: 700;
 }
 
@@ -172,7 +172,6 @@ header {
     font-size: 1.2rem;
     color: #777777;
     margin-top: 1.5rem;
-    font-family: "Lato", sans-serif;
     line-height: 2rem;
     font-weight: 400;
 }
@@ -235,11 +234,13 @@ header {
     z-index: 3000;
 }
 
+/*Section features styling*/
+
 .section-features {
     display: flex;
     flex-direction: column;
     margin-top: -7rem;
-    padding:20rem 15rem;
+    padding:14.8rem 15rem;
     background-image:linear-gradient(to top, rgba(255, 0, 204, 0.253), rgba(51, 51, 153, 0.849)), url("../img/section-feature.jpg");
     background-position: center;
     background-repeat: no-repeat; 
@@ -251,4 +252,91 @@ header {
 .section-features h1 {
     font-size: 16rem;
 }
+
+.section-features-container {
+    transform: skewY(7deg);
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(247, 247, 247, 0.856);
+    padding: 1.7rem 1.5rem;
+    border-radius: 0.2rem;
+    box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    transition: 0.3s all;
+}
+
+.feature:hover {
+    transform: scale(1.02) translateY(-15px); 
+}
+
+.feature:nth-child(2) {
+    margin-left: 4.5rem;
+    margin-right: 2.25rem;
+}
+
+.feature:nth-child(3) {
+    margin-right: 4.5rem;
+    margin-left: 2.25rem;
+}
+
+.feature h3 {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #777777;
+}
+
+.fa-tree {
+    font-size: 5rem;
+    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-compass{
+    font-size: 5rem;
+    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-campground{
+    font-size: 5rem;
+    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-hiking{
+    font-size: 5rem;
+    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+i {
+    padding-top: 1rem;
+}
+
+.feature p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #777777;
+    line-height: 2rem;
+    text-align: center;
+}
+
+
 
