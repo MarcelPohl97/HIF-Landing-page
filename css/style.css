@@ -266,7 +266,7 @@ header {
 .section-features-container {
     transform: skewY(7deg);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .feature {
@@ -274,6 +274,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 300px;
     background: rgba(247, 247, 247, 0.856);
     padding: 1.7rem 1.5rem;
     border-radius: 0.2rem;
@@ -284,6 +285,7 @@ header {
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
     transition: 0.3s all;
+    flex-shrink: 0;
 }
 
 .feature:hover {
@@ -349,14 +351,26 @@ i {
 
 .section-tours-card-container{
     display: flex;
-    justify-content: space-between;
+    perspective: 2000px;
+    justify-content: center;
 }
 
 .card {
     background: #FFFFFF;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
     border-radius: 0.2rem;
-    position: relative;
+    width: 400px;
+    flex-shrink: 0;
+    margin: 0 2.2rem;
+    transform-style: preserve-3d;
+    transition: all .8s;
+    
+
+}
+
+.card:hover { 
+    transition: all .8s;
+    transform: rotateY(-180deg);
 }
 
 .card-header {
@@ -425,6 +439,7 @@ i {
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
 }
+
 
 
 
