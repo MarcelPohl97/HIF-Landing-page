@@ -444,6 +444,8 @@ i {
     text-transform: uppercase;
 }
 
+/* Section Stories */
+
 .section-stories {
     position: relative;
     text-align:center;
@@ -451,7 +453,7 @@ i {
 
 .video-bg {
     position: absolute;
-    height: 1000px;
+    height: 100%;
     width: 100%;
     opacity: .20;
     overflow: hidden;
@@ -483,30 +485,41 @@ video {
     box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
     background-color: rgba(255,255,255,0.6);
     border-radius: 3px;
-    padding: 6rem;
+    padding: 4rem 4rem;
     display: flex;
-    width: 800px;
-    text-align: left;
     align-items: center;
+    max-width: 1000px;
+    margin-bottom: 5rem;
 }
+
+
 
 .story img {
     clip-path: circle(50% at 50% 50%);
-    margin-right: 2rem;
-    width: 10rem;
-    height: 10rem;
-    transform: skewX(12deg)
+    width: 11rem;
+    height: 11rem;
+    transform: skewX(12deg);
 }
 
-.story h3 {
-    font-size: 1.2rem;
+.story-text {
+    transform: skewX(12deg);
+    line-height: 1.5rem;
+    margin-left: 2rem;
+    text-align: left;
+
+
+}
+
+.story-text h3 {
     color:#868686;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
-.story p {
-    font-size: 1.2rem;
+.story-text p {
+    padding-top: 1rem;
     color:#7E7E7E;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 
