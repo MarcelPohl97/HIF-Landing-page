@@ -33,7 +33,7 @@ body {
 }
 
 .purple {
-    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    background: #6D24A7;
 }
 
 
@@ -247,15 +247,13 @@ header {
 /*Section features styling*/
 
 .section-features {
-    display: flex;
-    flex-direction: column;
     margin-top: -7rem;
-    padding:14.8rem 15rem;
     background-image:linear-gradient(to top, rgba(255, 0, 204, 0.253), rgba(51, 51, 153, 0.849)), url("../img/section-feature.jpg");
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
     transform: skewY(-7deg);
+    padding:14.8rem 15rem;
 
 }
 
@@ -269,14 +267,17 @@ header {
     justify-content: center;
 }
 
+.section-features-container [class^="feature"]:not(:last-child) {
+    margin-right: 4.4rem;
+}
+
 .feature {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    width: 300px;
+    width: 285px;
     background: rgba(247, 247, 247, 0.856);
-    padding: 1.7rem 1.5rem;
+    padding: 1.7rem 1.3rem;
     border-radius: 0.2rem;
     box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -292,15 +293,6 @@ header {
     transform: scale(1.02) translateY(-15px); 
 }
 
-.feature:nth-child(2) {
-    margin-left: 4.5rem;
-    margin-right: 2.25rem;
-}
-
-.feature:nth-child(3) {
-    margin-right: 4.5rem;
-    margin-left: 2.25rem;
-}
 
 .feature h3 {
     font-size: 1.2rem;
@@ -333,7 +325,6 @@ i {
     display: flex;
     flex-direction: column;
     margin-top: -20vh;
-    
     padding-left: 15rem;
     padding-right: 15rem;
     padding-top: 21rem;
@@ -368,8 +359,6 @@ i {
     margin: 0 2.2rem;
     transform-style: preserve-3d;
     transition: all .8s;
-    
-
 }
 
 .card:hover { 
@@ -399,7 +388,7 @@ i {
 
 .card-header-title h4 {
     position: absolute;
-    background:linear-gradient(to top, rgba(255, 0, 204, 0.507), rgb(51, 51, 153));
+    background:linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
     padding:0.8rem 0.8rem;
     color: #FFFFFF;
     font-size: 1.8rem;
@@ -476,6 +465,7 @@ video {
     -webkit-text-fill-color: transparent;
     letter-spacing: 0.5rem;
     font-family: "Lato", sans-serif;
+    margin-bottom: 6rem;
 }
 
 .story {
@@ -489,10 +479,8 @@ video {
     display: flex;
     align-items: center;
     max-width: 1000px;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
 }
-
-
 
 .story img {
     clip-path: circle(50% at 50% 50%);
@@ -506,8 +494,6 @@ video {
     line-height: 1.5rem;
     margin-left: 2rem;
     text-align: left;
-
-
 }
 
 .story-text h3 {
@@ -521,6 +507,181 @@ video {
     font-size: 1.2rem;
     line-height: 2rem;
 }
+
+.section-stories-footer {
+    padding-bottom: 12rem;
+}
+
+.section-stories-footer a {
+    color: #6D24A7;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    transition: 0.2s all;
+    padding: 0.3rem 0;
+    width: 130px;
+}
+
+.section-stories-footer a:hover {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    text-decoration: none;
+    background:#6D24A7;
+    transform: translateX(-3px);
+}
+
+/* Section Booking */
+
+.section-booking {
+    background:#6D24A7;
+    padding: 12rem 15rem;
+
+}
+
+.booking-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.booking-form {
+    background-image: linear-gradient(105deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 50%, transparent 50%), url('../img/booking-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.2);
+    width:100%;
+    min-width: 1350px;
+}
+
+.form h2 {
+    font-size: 2.6rem;
+    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    letter-spacing: 0.25rem;
+    
+}
+
+.form {
+    display:block;
+    width: 50%;
+    padding: 5rem;
+}
+
+.form input[type="text"], .form input[type="email"] {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border:none;
+    display: block;
+    margin-bottom: 3.5rem;
+    max-width: 90%;
+    min-width: 500px;
+}
+
+.form-radio {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.form-radio input {
+    margin-right: 1rem;
+}
+
+.form-radio label {
+    color:#7E7E7E;
+}
+
+.form-radio label:nth-child(2){
+    margin-right: 4rem;
+}
+
+.form a {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 1.1rem 3rem;
+}
+
+/* Footer Styling */
+
+footer {
+    padding: 10rem 15rem;
+    background-color:#333333;
+}
+
+.footer-container h2 {
+    font-size: 2.6rem;
+    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    text-align:center;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links {
+    flex-shrink:0;
+    margin-right: 6rem;
+    width: 600px;
+
+}
+
+.footer-links ul {
+    display: flex;
+    border-top: 0.5px solid #777777;
+    padding: 1.5rem 0 0 0;
+    justify-content:flex-start;
+}
+
+.footer-links ul li {
+    font-size: 1.1rem;
+    color:#FFFFFF;
+    transition: .2s;
+}
+
+.footer-links ul li:not(:last-child) {
+    margin-right: 1rem
+}
+
+.footer-links ul li:hover {
+    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: skewY(8deg) scale(1.2);
+}
+
+.footer-copyright {
+    border-top: 0.5px solid #777777;
+    flex-shrink:0;
+    margin-left: 6rem;
+    width: 600px;
+}
+
+.footer-copyright p {
+    padding-top: 1.5rem;
+    color:#FFFFFF;
+    font-size: 1.2rem;
+    float:right;
+    transition: .2s;
+}
+
+.footer-copyright p span:hover {
+    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: skewY(8deg) scale(1.2);
+}
+
 
 
 
