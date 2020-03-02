@@ -1,0 +1,4 @@
+- create utility classes to remove duplicate css code:
+    - paddings in sections
+    - flex items
+    - color utility classes

@@ -36,6 +36,18 @@ body {
     background: #6D24A7;
 }
 
+.title {
+    font-size: 2.6rem;
+    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.5rem;
+}
+
+h3, p {
+    color:#777777;
+}
+
 
 /* Header styles */
 
@@ -57,9 +69,8 @@ header {
     position: absolute;
     color: #FFFFFF;
     font-size: 2rem;
-    font-family: 'Shrikhand', cursive;
     letter-spacing: 2px;
-    font-weight: 100;
+    font-weight: 900;
     
 }
 
@@ -109,13 +120,11 @@ header {
 .main {
     font-size: 4rem;
     letter-spacing: 0.5rem;
-    font-family: "Lato", sans-serif;
 }
 
 .sub {
     font-size: 2rem;
     letter-spacing: 0.5rem;
-    font-family: "Lato", sans-serif;
 }
 
 .header-text-container a {
@@ -124,7 +133,6 @@ header {
     font-size: 1.2rem;
     letter-spacing: normal;
     background: #FFFFFF;
-    font-family: "Lato", sans-serif;
     text-transform: uppercase;
 }
 
@@ -144,15 +152,9 @@ header {
 
 .section-about-title h2 {
     margin-top: -2rem;
-    font-size: 2.6rem;
-    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 0.5rem;
     display: flex;
     justify-content: center;
     margin-bottom: 6rem;
-    font-family: "Lato", sans-serif;
 }
 
 .section-about-content {
@@ -173,14 +175,12 @@ header {
 
 .section-about-text h3 {
     font-size: 1.2rem;
-    color: #777777;
     text-transform: uppercase;
     font-weight: 700;
 }
 
 .section-about-text p {
     font-size: 1.2rem;
-    color: #777777;
     margin-top: 1.5rem;
     line-height: 2rem;
     font-weight: 400;
@@ -300,7 +300,6 @@ header {
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
-    color: #777777;
 }
 
 i {
@@ -314,7 +313,6 @@ i {
 .feature p {
     font-size: 1.1rem;
     font-weight: 400;
-    color: #777777;
     line-height: 2rem;
     text-align: center;
 }
@@ -333,14 +331,8 @@ i {
 }
 
 .section-tours-title h2 {
-    font-size: 2.6rem;
-    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 6rem;
-    font-family: "Lato", sans-serif;
     text-align: center;
 }
 
@@ -407,7 +399,6 @@ i {
     right: 0.3rem;
 }
 
-
 .card-details ul {
     padding: 3rem 4.5rem;
     margin-top: -1rem;
@@ -429,7 +420,6 @@ i {
 .section-tours-footer a {
     color: #FFFFFF;
     font-size: 1.2rem;
-    font-family: "Lato", sans-serif;
     text-transform: uppercase;
 }
 
@@ -459,12 +449,6 @@ video {
 
 .section-stories-title h2 {
     padding-top: 12rem;
-    font-size:2.6rem;
-    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 0.5rem;
-    font-family: "Lato", sans-serif;
     margin-bottom: 6rem;
 }
 
@@ -497,13 +481,11 @@ video {
 }
 
 .story-text h3 {
-    color:#868686;
     font-size: 1.2rem;
 }
 
 .story-text p {
     padding-top: 1rem;
-    color:#7E7E7E;
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -554,14 +536,9 @@ video {
 }
 
 .form h2 {
-    font-size: 2.6rem;
-    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     margin-bottom: 3rem;
     letter-spacing: 0.25rem;
-    
 }
 
 .form {
@@ -615,10 +592,7 @@ footer {
 }
 
 .footer-container h2 {
-    font-size: 2.6rem;
-    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    letter-spacing: 0;
     text-transform: uppercase;
     margin-bottom: 6rem;
     text-align:center;
@@ -633,7 +607,6 @@ footer {
     flex-shrink:0;
     margin-right: 6rem;
     width: 600px;
-
 }
 
 .footer-links ul {
