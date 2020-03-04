@@ -1,8 +1,7 @@
 - create utility classes to remove duplicate css code:
     - add animations
-        - buttons
         - flipping cards background
     - different box shadows for all
     - styling contact form radio buttons
     - add responsive nav
-    - 
+    - make whole website responsive;
