@@ -104,7 +104,7 @@ body {
 }
 
 .title:hover {
-    transform: skewX(12deg) skewY(3deg);
+    transform: skewY(8deg) scale(1.2);
 }
 
 h3, p {
@@ -415,27 +415,89 @@ i {
     text-align: center;
 }
 
-.section-tours-card-container{
+.section-card-container{
+    position: relative;
+    padding: 20rem 15rem;
     display: flex;
-    perspective: 2000px;
-    justify-content: center;
 }
 
-.card {
-    background: #FFFFFF;
-    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
-    border-radius: 0.2rem;
+.middle {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+.card-1 {transform:translate(-169%, -50%);}
+.card-2 {transform:translate(-50%, -50%);}
+.card-3 {transform:translate(69%, -50%);}
+  
+  .card {
+    cursor: pointer;
     width: 400px;
-    flex-shrink: 0;
-    margin: 0 2.2rem;
-    transform-style: preserve-3d;
-    transition: all .8s;
-}
+    height: 620px;
+  }
+  
+  .front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s;
+    background: #fff;
+    transform: perspective(600px) rotateY(0deg);
+  }
+  
+  .back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: .5s ;
+    background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
+    transform: perspective(600px) rotateY(180deg);
+    position: absolute;
+  }
 
-.card:hover { 
-    transition: all .8s;
-    transform: rotateY(-180deg);
-}
+  .back h3 {
+      margin-top: 3rem;
+      margin-bottom: 10rem;
+  }
+
+  .back-content h3 {
+      color:#fff;
+      font-size: 4rem;
+      font-weight: 100;
+  }
+
+  .back-content p {
+      color: #fff;
+      font-size: 1rem;
+      left: 50%;
+      position: absolute;
+      transform:translate(-50%, 0);
+  }
+
+  .back a {
+      top:100%;
+      left: 50%;
+      transform:translate(-50%, -70%);
+      text-align: center;
+      font-size: 1.2rem;
+      width: 240px;
+  }
+  
+  .back {
+    transform: perspective(600px) rotateY(180deg);
+  }
+
+  
+  .card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  
+  .card:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+  }
+
 
 .card-header {
     background-size: cover;
