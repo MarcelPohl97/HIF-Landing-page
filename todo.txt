@@ -1,5 +1,7 @@
 - create utility classes to remove duplicate css code:
-    - different box shadows for all
     - styling contact form radio buttons
     - add responsive nav
+
+
+    - split css files in microcomponents
     - make whole website responsive;

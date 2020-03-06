@@ -358,12 +358,13 @@ header {
     background: rgba(247, 247, 247, 0.856);
     padding: 1.7rem 1.3rem;
     border-radius: 0.2rem;
-    box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
     transition: 0.3s all;
     flex-shrink: 0;
 }
@@ -445,6 +446,14 @@ i {
     transition: .5s;
     background: #fff;
     transform: perspective(600px) rotateY(0deg);
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07)
+;
   }
   
   .back {
@@ -455,6 +464,14 @@ i {
     background: linear-gradient(to top, rgb(255, 0, 204), rgb(51, 51, 153));
     transform: perspective(600px) rotateY(180deg);
     position: absolute;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07)
+;
   }
 
   .back h3 {
@@ -686,6 +703,7 @@ video {
     display:block;
     width: 50%;
     padding: 5rem;
+    position: relative;
 }
 
 .form input[type="text"], .form input[type="email"] {
@@ -724,6 +742,53 @@ video {
     text-transform: uppercase;
     padding: 1.1rem 3rem;
 }
+
+input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    left: 14.3%;
+    top: 70.85%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  
+  /* .design */
+  .design {
+    width: 32px;
+    height: 32px;
+    border: 5px solid #6D24A7;
+    border-radius: 100%;
+    margin-right: 16px;
+    position: relative;
+  }
+  
+  .design::before,
+  .design::after {
+    content: "";
+    display: block;
+  
+    width: inherit;
+    height: inherit;
+  
+    border-radius: inherit;
+  
+    position: absolute;
+    transform: scale(0);
+    transform-origin: center center;
+  }
+  
+  .design:before {
+    background: red;
+    opacity: 0;
+    transition: .3s;
+  }
+  
+  .design::after {
+    background: green;
+    opacity: .4;
+    transition: .6s;
+  }
 
 /* Footer Styling */
 
