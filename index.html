@@ -9,14 +9,24 @@
     <title>HIF | Holiday in Forest</title>
 </head>
 <body>
+    <div id="nav-btn" class="nav-container">
+        <div class="nav"></div>
+        <div class="nav"></div>
+        <div class="nav"></div>
+    </div>
+    </div>
+    <div id="responsive-nav" class="responsive-nav">
+        <ul id="nav-options" class="nav-options">
+            <li>01 About HIF</li>
+            <li>02 Your Benefits</li>
+            <li>03 Popular Tours</li>
+            <li>04 Stories</li>
+            <li>05 Book now</li>
+        </ul>
+    </div>
     <header>
         <div class="header-nav-container">
             <h2 alt="Logo" class="header-logo">HIF</h2>
-            <div class="nav-container">
-                <div class="nav"></div>
-                <div class="nav"></div>
-                <div class="nav"></div>
-            </div>
         </div>
         <div class="header-text-container">
             <h1 class="header-text">
@@ -194,12 +204,16 @@
                         <input type="text" placeholder="Full Name">
                         <input type="email" placeholder="Email address">
                         <div class="form-radio">
-                            <input type="radio" value="small tour group" name="dark" unchecked>
-                            <span class="design"></span>
-                            <label for="small tour group">Small tour group</label>
-                            <span class="design"></span>
-                            <input type="radio" value="large tour group">
-                            <label for="large tour group">Large tour group</label>
+                            <label class="radio">
+                                <input type="radio" value="small-tour" name="tour-size">
+                                <span></span>
+                                <p>Small tour group</p>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" value="large-tour" name="tour-size">
+                                <span></span>
+                                <p>Large tour group</p>
+                            </label>
                         </div>
                         <a class="btn purple form-button">Next Step →</a>
                     </form>
@@ -226,5 +240,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

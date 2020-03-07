@@ -1,7 +1,6 @@
 - create utility classes to remove duplicate css code:
-    - styling contact form radio buttons
-    - add responsive nav
-
-
+    - add hover animation for nav items
+    - rework some h2 title hover states or maybe remove
+    - clean css up
     - split css files in microcomponents
     - make whole website responsive;
