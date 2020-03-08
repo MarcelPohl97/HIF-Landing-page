@@ -1,6 +1,5 @@
 - create utility classes to remove duplicate css code:
-    - add hover animation for nav items
-    - rework some h2 title hover states or maybe remove
-    - clean css up
+    - clean css up bring everything in right order
     - split css files in microcomponents
+    - try to clean css up again in microcomponents
     - make whole website responsive;

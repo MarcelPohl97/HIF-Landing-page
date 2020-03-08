@@ -156,13 +156,29 @@ h3, p {
     margin-top: 4px;
     margin-bottom: 4px;
     z-index: 3000;
+    transition: .2s;
 }
 
-.nav-container:hover .nav:nth-child(2) {
-    margin-top: 6px;
-    margin-bottom: 6px;
+.nav-hover-state:hover .nav:nth-child(2){
+    margin: 0.4rem 0;
 }
 
+.nav-active-state .nav:nth-child(1) {
+    transition: .2s;
+    transform:rotate(45deg) translate(4px, 10px);
+    margin-left: 8px;
+}
+
+.nav-active-state .nav:nth-child(2) {
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.nav-active-state .nav:nth-child(3) {
+    transition: .2s;
+    transform:rotate(-45deg) translate(4px, -10px);
+    margin-left: 8px;
+}
 
 /* Responsive Nav */
 
@@ -210,12 +226,35 @@ h3, p {
 }
 
 .responsive-nav ul li {
-    margin: 4rem;
-    font-size: 2.5rem;
+    margin: 1.5rem;
+    font-size: 2.3rem;
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
+    padding: 1rem 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
 }
+
+.responsive-nav ul li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: .4s;
+  }
+  .responsive-nav ul li:hover {
+    color: #6D24A7;
+    transform: translateX(10px)
+  }
+  .responsive-nav ul li:hover:before {
+    width: 100%;
+  }
 
 /* Header styles */
 
