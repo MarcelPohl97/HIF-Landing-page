@@ -320,8 +320,6 @@ header {
 /*Section about styling*/
 
 .section-about {
-    display: flex;
-    flex-direction: column;
     margin-top: -20vh;
     padding:20rem 15rem;
     background:#F7F7F7;
@@ -329,19 +327,20 @@ header {
 
 .section-about-title h2 {
     margin-top: -2rem;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-bottom: 6rem;
 }
 
 .section-about-content {
     display: flex;
     justify-content: space-between;
+
 }
 
 .section-about-info{
     display: flex;
     flex-direction: column;
+    flex-shrink:0;
 }
 
 .section-about-text {
@@ -384,7 +383,8 @@ header {
 
 .section-about-img {
     position: relative;
-    margin-right:18rem;
+    width: 356px;
+    flex-shrink:0;
 }
 
 .section-about-img img {
@@ -403,18 +403,18 @@ header {
 
 .img-child-1 {
     top: 0px;
-    left: -350px;
+    left: -290px;
     
 }
 
 .img-child-2 {
     top: 50px;
-    left: -60px;
+    left: 0;
 }
 
 .img-child-3 {
     top: 150px;
-    left: -220px;
+    left: -160px;
 }
 
 .section-about-img img:hover {
